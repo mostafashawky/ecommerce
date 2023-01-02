@@ -1,0 +1,82 @@
+@use "../helper/var";
+.categories {
+	overflow: hidden;
+	.wrapper {
+		padding-right: 15px;
+		padding-left: 15px;
+		height: 245px;
+	}
+	.cat-card {
+		background-color: rgba(0, 0, 0, 0.03);
+		height: 100%;
+	}
+	.img {
+		width: 100%;
+		margin: auto;
+		object-fit: contain;
+	}
+	.cat-name {
+		font-weight: 500;
+		font-size: 18px;
+		margin-top: 15px;
+		font-family: var.$roboto;
+	}
+}
+
+.products-wrapper {
+	margin-top: 40px;
+}
+
+.new-arrival {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.new-arrival .product-card {
+	margin-right: 5px;
+	width: 96% !important;
+	box-shadow: 0 0 8px 0 rgb(57 78 234 / 10%);
+}
+
+.new-arrival .arrow {
+	background: #f4f4f4;
+	margin: 0px 3px;
+	color: #cdcdcd !important;
+	padding: 2px 6px;
+	font-size: 1.1rem;
+	text-align: center;
+	vertical-align: middle;
+	display: inline-block;
+	cursor: pointer;
+	transition: all 0.2s;
+}
+
+.new-arrival .slick-arrow {
+	display: none !important;
+}
+
+.categories {
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+
+.categories .product-card {
+	background-color: #fff;
+}
+
+.categories a {
+	text-decoration: none;
+}
+
+.categories .category-name {
+	font-family: var(--roboto);
+	color: var(--primarycolor);
+	font-weight: bold;
+	margin-top: 12px;
+}
+
+.collection-products .img {
+	height: 240px;
+	object-fit: cover;
+	object-position: center;
+}

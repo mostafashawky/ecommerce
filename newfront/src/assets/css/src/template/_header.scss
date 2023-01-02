@@ -1,0 +1,58 @@
+@use "../helper/var";
+.nav {
+	margin-top: 30px;
+	.logo {
+		color: #212242;
+		font-weight: bold;
+		font-size: 30px;
+		font-family: var.$roboto;
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+	.search-input {
+		font-family: var.$montserrat;
+		margin-bottom: 10px;
+		position: relative;
+		height: 45px;
+		@media screen and (min-width: 768px) {
+			margin-bottom: 0px;
+		}
+		.search {
+			border: 1px solid var.$softborder;
+			height: 100%;
+		}
+		.btn-search {
+			position: absolute;
+			left: 0px;
+			top: 0px;
+			background-color: var.$primarycolor;
+			color: #fff;
+			width: 45px;
+			height: 100%;
+			border: none;
+		}
+	}
+	.user-action {
+		color: #727272;
+		font-size: 21px;
+		display: flex;
+		flex-direction: row-reverse;
+		gap: 22px;
+		height: 100%;
+		align-items: center;
+		@media screen and (min-width: 1170px) {
+			margin-left: 20px;
+		}
+	}
+	.count {
+		position: absolute;
+		background-color: var.$primarycolor;
+		color: #fff;
+		border-radius: 50%;
+		font-size: 12px;
+		width: 18px;
+		height: 18px;
+		text-align: center;
+		font-family: var.$roboto;
+	}
+}

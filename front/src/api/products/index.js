@@ -1,0 +1,8 @@
+export { default as newArrivalApi } from './newArrivalApi'
+export { default as productdetailsApi } from './productdetailsApi'
+export { default as remarkproductApi } from './remarkproductApi'
+export { default as searchproductApi } from './searchproductApi'
+export { default as relatedproductApi } from './relatedproductApi'
+export { default as recentproductviewApi } from './recentproductviewApi'
+export { default as randomproductApi } from './randomproductApi'
+export { default as offersApi } from './offersApi'

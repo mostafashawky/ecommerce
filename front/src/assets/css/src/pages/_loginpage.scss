@@ -1,0 +1,66 @@
+.login-form {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.login-form .login-wrapper {
+    background-color: #fff;
+    padding-left: 0px;
+    padding-right: 0px;
+    box-shadow: 0 0 8px 0 rgb(57 78 234 / 10%);
+    border-radius: 8px;
+    ;
+}
+
+.login-form .login-wrapper .form {
+    padding-left: 18px;
+    width: 80%;
+    margin: auto;
+}
+
+.login-form .form-title {
+    color: var(--primarycolor);
+    font-weight: bold;
+    text-align: center;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.login-form .login-wrapper .form .description {
+    font-family: var(--roboto);
+    color: #767676;
+}
+
+.login-form .login-wrapper .form .form-control {
+    background: #efefef
+}
+
+.login-form .login-wrapper .form .form-control:focus {
+    box-shadow: none !important;
+}
+
+.login-form .form-image {
+    height: 100%;
+}
+
+
+.login-form .form-image img {
+    height: 427px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.login-form .btn-login {
+    border: none;
+    width: 100%;
+    font-family: var(--roboto);
+    text-transform: uppercase;
+
+}
+
+.login-form .btn-login:hover {
+    box-shadow: none;
+    background: var(--primarycolor)
+}

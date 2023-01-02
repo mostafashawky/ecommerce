@@ -1,0 +1,20 @@
+@use "../helper/var";
+.desktop-menu {
+	margin-top: 10px;
+	background: var.$secondarycolor;
+	color: #fff;
+	padding: 10px;
+	.list {
+		font-family: var.$cairo;
+		gap: 59px;
+		text-transform: uppercase;
+		margin: 0px;
+		padding: 12px;
+	}
+	.item a {
+		transition: all 0.2s;
+		&:hover {
+			color: #e7e5e5;
+		}
+	}
+}

@@ -1,0 +1,351 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&display=swap");
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Cairo", sans-serif;
+}
+
+body {
+  direction: rtl;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.main-heading {
+  font-size: 23px;
+  margin-bottom: 3.1rem;
+  font-weight: bold;
+  color: #292b2c;
+}
+
+.list-title {
+  font-weight: "Montserrat", sans-serif;
+  font-size: 22px;
+  position: relative;
+}
+.list-title::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  bottom: -7px;
+  width: 80px;
+  background: #d10024;
+  height: 2px;
+}
+
+.mtc-1 {
+  margin-top: 1rem;
+}
+
+.mtc-2 {
+  margin-top: 2rem;
+}
+
+.mtc-3 {
+  margin-top: 3rem;
+}
+
+.mtc-4 {
+  margin-top: 4rem;
+}
+
+.mtc-5 {
+  margin-top: 5rem;
+}
+
+.mtc-6 {
+  margin-top: 6rem;
+}
+
+.nav {
+  margin-top: 30px;
+}
+.nav .logo {
+  color: #212242;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.nav .search-input {
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 10px;
+  position: relative;
+  height: 45px;
+}
+@media screen and (min-width: 768px) {
+  .nav .search-input {
+    margin-bottom: 0px;
+  }
+}
+.nav .search-input .search {
+  border: 1px solid #dbdbdb;
+  height: 100%;
+}
+.nav .search-input .btn-search {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: #d10024;
+  color: #fff;
+  width: 45px;
+  height: 100%;
+  border: none;
+}
+.nav .user-action {
+  color: #727272;
+  font-size: 21px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 22px;
+  height: 100%;
+  align-items: center;
+}
+@media screen and (min-width: 1170px) {
+  .nav .user-action {
+    margin-left: 20px;
+  }
+}
+.nav .count {
+  position: absolute;
+  background-color: #d10024;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.desktop-menu {
+  margin-top: 10px;
+  background: #2f7dfc;
+  color: #fff;
+  padding: 10px;
+}
+.desktop-menu .list {
+  font-family: "Cairo", sans-serif;
+  gap: 59px;
+  text-transform: uppercase;
+  margin: 0px;
+  padding: 12px;
+}
+.desktop-menu .item a {
+  transition: all 0.2s;
+}
+.desktop-menu .item a:hover {
+  color: #e7e5e5;
+}
+
+.slider {
+  overflow: hidden;
+}
+.slider img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+}
+
+.product-card {
+  border: none !important;
+  position: relative;
+  padding-bottom: 25px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 1170px) {
+  .product-card {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+.product-card:hover .user-action, .product-card:hover .add-cart-btn {
+  opacity: 1;
+}
+.product-card .offer-percentage {
+  position: absolute;
+  left: 16px;
+  top: 17px;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  color: #fff;
+  background: #d10024;
+  font-size: 14px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  line-height: 35px;
+  text-align: center;
+}
+.product-card .card-header {
+  position: relative;
+  border-bottom: none;
+}
+.product-card .user-action {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.4s;
+}
+.product-card .btn-icon {
+  border: none;
+  background-color: #2f7dfc;
+  color: #fff;
+  margin-right: 10px;
+  padding: 8px 12px;
+  font-size: 17px;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+.product-card .btn-icon:hover {
+  color: #212224;
+}
+.product-card .img {
+  height: 203px;
+  border-radius: 0px !important;
+  object-fit: contain;
+}
+.product-card .product-name {
+  color: #303030;
+  font-weight: normal;
+  font-size: 18px;
+  transition: all 0.3s;
+  font-family: "Roboto Condensed", sans-serif;
+}
+.product-card .product-name:hover {
+  color: #d10024;
+}
+.product-card .product-price {
+  color: #d10024;
+  margin: 10px 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.product-card .product-price.offer {
+  color: #727272;
+  position: relative;
+  font-weight: normal;
+}
+.product-card .product-price.offer::after {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #727272;
+  width: 100%;
+  height: 1px;
+}
+.product-card .add-cart-btn {
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  background-color: #2f7dfc;
+  width: 100%;
+  border: none;
+  color: #fff;
+  padding: 7px;
+  font-family: "Cairo", sans-serif;
+  font-weight: 500;
+  opacity: 0;
+  transition: all 0.4s;
+}
+
+.categories {
+  overflow: hidden;
+}
+.categories .wrapper {
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 245px;
+}
+.categories .cat-card {
+  background-color: rgba(0, 0, 0, 0.03);
+  height: 100%;
+}
+.categories .img {
+  width: 100%;
+  margin: auto;
+  object-fit: contain;
+}
+.categories .cat-name {
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 15px;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.products-wrapper {
+  margin-top: 40px;
+}
+
+.new-arrival {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.new-arrival .product-card {
+  margin-right: 5px;
+  width: 96% !important;
+  box-shadow: 0 0 8px 0 rgba(57, 78, 234, 0.1);
+}
+
+.new-arrival .arrow {
+  background: #f4f4f4;
+  margin: 0px 3px;
+  color: #cdcdcd !important;
+  padding: 2px 6px;
+  font-size: 1.1rem;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.new-arrival .slick-arrow {
+  display: none !important;
+}
+
+.categories {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.categories .product-card {
+  background-color: #fff;
+}
+
+.categories a {
+  text-decoration: none;
+}
+
+.categories .category-name {
+  font-family: var(--roboto);
+  color: var(--primarycolor);
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.collection-products .img {
+  height: 240px;
+  object-fit: cover;
+  object-position: center;
+}
+
+/*# sourceMappingURL=main.css.map */

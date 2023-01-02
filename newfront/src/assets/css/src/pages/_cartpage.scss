@@ -1,0 +1,124 @@
+.cart-wrapper {
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+.cart-wrapper .cart-details-box {
+    border: 1px solid #e1e1e1;
+}
+
+.cart-details-box .cart-title {
+    background-color: #fafafa;
+    padding: 11px 18px;
+    color: #666666;
+    border-bottom: 1px solid #e1e1e1;
+    font-size: 19px;
+    font-family: var(--regularroboto);
+    font-weight: 500;
+}
+
+.cart-details-body {
+    padding: 10px 10px 10px 15px;
+    flex-wrap: wrap;
+
+
+}
+
+.cart-details-body:not(:last-child) {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+}
+
+.cart-details-body .product-img {
+    max-width: 100px;
+}
+
+.cart-details-body .product-img .img {
+    height: 80px;
+    object-fit: contain;
+}
+
+.cart-details-body .product-details {
+    max-width: 356px;
+
+}
+
+.cart-details-body .product-details .title {
+    font-size: 18px;
+    color: #878383;
+    line-height: 1.3;
+}
+
+.cart-details-body .product-details .price {
+    color: #494646;
+    font-family: var(--roboto);
+    font-size: 17px;
+
+}
+
+.cart-details-body .total-price {
+    font-family: var(--roboto);
+    margin-top: -1px;
+    margin-bottom: 0px;
+    font-size: 17px;
+    color: #494646;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.quantity-wrapper {
+    margin-left: 12px;
+}
+
+.cart-details-body .remove-product {
+    border: none;
+    background-color: transparent;
+    color: #897a7a;
+    margin-top: 3px;
+    font-size: 18px;
+    margin-left: 16px;
+}
+
+.cart-details-body .remove-product:hover {
+    color: var(--accentcolor)
+}
+
+.cart-details-wrapper {
+    border: 1px solid #e1e1e1;
+    padding-bottom: 18px;
+}
+
+@media screen and (max-width: 992px) {
+    .cart-details-wrapper {
+        margin-top: 15px;
+    }
+}
+
+.cart-details-wrapper .title {
+    padding: 10px 14px;
+    background-color: #fafafa;
+    font-size: 18px;
+    font-family: var(--roboto-regular);
+    border-bottom: 1px solid #e1e1e1;
+    position: relative;
+    border-left: 2px solid #286090;
+}
+
+
+.cart-details-wrapper .list-details {
+    padding-left: 17px;
+}
+
+.cart-details-wrapper .list-details .item {
+    font-family: var(--roboto);
+    color: #494646;
+    margin-top: 10px;
+}
+
+.cart-details-wrapper .btn-checkout {
+    display: block;
+    width: 80px;
+    margin-left: auto;
+    margin-right: 10px;
+}
