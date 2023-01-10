@@ -1,17 +1,14 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Container, Col, Row } from "react-bootstrap";
-import { compile } from "sass";
-compile("./header.scss");
-
+import "./header.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 const Header = () => {
 	return (
 		<div className="header">
 			<Container>
-				<Row
-					className="align-items-center"
-					style={{ flexDirection: "row-reverse" }}
-				>
+				<Row className="align-items-center">
 					<Col xs={12} md={2}>
 						<div className="logo text-center text-md-start">
 							<Link to="/">NotifyShop</Link>

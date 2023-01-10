@@ -1,13 +1,13 @@
 import React from "react";
 import * as HomepageComponent from "./components";
-import * as Layout from "../../layout";
+import * as layout from "../../components/layout";
 
 const HomePage = () => {
 	return (
-		<>
-			<Layout.Header />
+		<div className="app">
+			<layout.Header />
 			<HomepageComponent.TopSlider />
-		</>
+		</div>
 	);
 };
 
